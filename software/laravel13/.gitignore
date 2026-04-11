@@ -1,0 +1,269 @@
+# ============================================
+# 🔴 CRITICAL SECURITY (NEVER UPLOAD)
+# ============================================
+
+# Environment files with sensitive data
+.env
+.env.*
+!.env.example
+.env.backup
+.env.production
+.env.local
+.env.staging
+
+# Database backups (CRITICAL!)
+*.sql
+*.sql.gz
+*.sql.zip
+*.dump
+*.db
+*.sqlite
+
+# Laravel encryption keys
+*.key
+storage/*.key
+storage/oauth-private.key
+storage/oauth-public.key
+
+# Log files (can expose system paths)
+*.log
+storage/logs/*.log
+storage/logs/*.log.*
+
+# ============================================
+# 🟡 DEPENDENCIES (Auto-generated, can reinstall)
+# ============================================
+
+# Composer
+/vendor/
+composer.lock
+composer.phar
+.auth.json
+
+# NPM
+/node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ============================================
+# 🟡 LARAVEL CACHE & TEMP FILES
+# ============================================
+
+# Laravel bootstrap cache
+/bootstrap/cache/
+/bootstrap/cache/*.php
+
+# Laravel storage framework
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/testing/
+/storage/framework/views/
+/storage/framework/schedule-*
+/storage/pail/
+
+# Laravel compiled assets
+/public/build/
+/public/hot/
+/public/storage/
+/public/css/app.css
+/public/js/app.js
+/public/mix-manifest.json
+/public/vite-manifest.json
+
+# Laravel debug files
+/storage/debugbar/
+_ide_helper.php
+.phpstorm.meta.php
+
+# ============================================
+# 🟢 IDE & EDITOR FILES (Personal)
+# ============================================
+
+# PHPStorm / IntelliJ
+/.idea/
+*.iml
+/.fleet/
+
+# VS Code
+/.vscode/
+*.code-workspace
+
+# Nova
+/.nova/
+
+# Zed
+/.zed/
+
+# Sublime Text
+*.sublime-*
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# ============================================
+# 🟢 OPERATING SYSTEM FILES
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.document
+
+# ============================================
+# 🟡 TESTING & COVERAGE
+# ============================================
+
+# PHPUnit
+.phpunit.result.cache
+.phpunit.cache/
+.coverage
+.coverage/
+coverage/
+tests/coverage/
+tests/Browser/screenshots/
+tests/Browser/console/
+
+# Pest
+.pest
+
+# ============================================
+# 🟡 BACKUP & ARCHIVE FILES
+# ============================================
+
+# General backups
+*.backup
+*.old
+*.orig
+*.rej
+*.bak
+*.tmp
+*.temp
+*.cache
+
+# Archive files
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# ============================================
+# 🟡 PROJECT-SPECIFIC FILES
+# ============================================
+
+# Session files (if using file driver)
+storage/framework/sessions/*
+
+# Image uploads (if using local storage)
+public/uploads/
+storage/app/public/
+
+# Laravel Telescope (if installed)
+/telescope/
+
+# Laravel Pulse (if installed)
+/storage/pulse/
+
+# ============================================
+# 🟢 DEPLOYMENT & TOOLS
+# ============================================
+
+# Deployment scripts
+deploy.sh
+deploy.yml
+*.deploy
+
+# CI/CD
+.github/workflows/
+.gitlab-ci.yml
+.travis.yml
+
+# Docker
+docker-compose.override.yml
+.env.docker
+Dockerfile
+
+# Homestead (Laravel)
+Homestead.json
+Homestead.yaml
+.env.homestead
+
+# Vagrant
+.vagrant/
+
+# ============================================
+# 🟡 API KEYS & SECRETS
+# ============================================
+
+# Certificates and keys
+*.pem
+*.crt
+*.p12
+*.csr
+
+# Service account files
+service-account.json
+*.service-account.json
+*.google-services.json
+
+# ============================================
+# 🟡 COMPOSER & NPM AUXILIARY
+# ============================================
+
+# Composer
+.phpactor.json
+.phpactor
+
+# NPM
+.npmrc
+.yarnrc
+.yarn/
+
+# ============================================
+# 🟡 MISC
+# ============================================
+
+# PHP CS Fixer
+.php-cs-fixer.cache
+.php_cs.cache
+
+# Laravel IDE Helper
+_ide_helper_models.php
+
+# PHPStan
+.phpstan.result.cache
+
+# Laravel Sail
+docker-compose.yml
+
+# ============================================
+# ✅ IMPORTANT: FILES THAT SHOULD BE TRACKED
+# ============================================
+!.env.example
+!.gitattributes
+!.gitignore
+!README.md
+!composer.json
+!package.json
+!artisan
+!server.php
