@@ -1,6 +1,5 @@
 <div align="center">
 
-<img src="https://img.icons8.com/color/96/000000/tailor.png" alt="Logo" width="80">
 
 # 🧵 OUTRE Tailor Management System
 
