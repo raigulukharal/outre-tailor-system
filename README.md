@@ -8,7 +8,7 @@
 
 **OUTRE Tailor System** is a complete production-ready web application for tailor shops to manage orders, deliveries, and customer data efficiently. Built with Laravel 13, Tailwind CSS, and AJAX.
 
-**Live Demo:** [https://outre.online](https://software.outre.online)
+**Live Demo:** [https://outre.online](https://outre.online)
 
 ---
 
